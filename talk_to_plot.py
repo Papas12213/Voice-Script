@@ -1,4 +1,4 @@
-#The first official version of my working code!
+#The first official version of my working code for my plotter!
 import time
 import glob
 import serial
