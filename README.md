@@ -24,7 +24,7 @@
  - While I wrote the code based on my current plotter using only the X and Y axis, the code should work for any machine that can take G-code (CNCs, 3D printers, laser cutters, etc)
 
 # Requirements 
-<small style="color: gray; font-style: italic;">Disclaimer: The code was written especially for my plotter. While it will still work on other machines, the code is based on my plotter's dimensions, axes, and baud rate, so certain movements may be very short. Luckily, these are all decided with variables that can be changed to accommodate your machine.</small>
+<small style="color: gray; font-style: italic;"> Disclaimer: The code was written especially for my plotter. While it will still work on other machines, the code is based on my plotter's dimensions, axes, and baud rate, so certain movements may be very short. Luckily, these are all decided with variables that can be changed to accommodate your machine.</small>
 
 - The entire code is written in Python. I currently use Python 3.13, but any version of Python 3 will work. You will also need to install the following libraries: Pyserial (imported as serial), HersheyFonts, PyAudio, and SpeechRecognition.
 
@@ -33,3 +33,5 @@
 - A machine that can run G-code, perferably one with with only a X and Y axis, but any will work. Additionally, a wired connection is perferred, but a bluetooth connection is included and works as well.
 
 - A microphone is needed for your voice to be recorded and converted into text.
+
+# How it Works
