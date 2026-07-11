@@ -49,15 +49,26 @@ The code is broken down into 3 steps:
 Since my plotter doesn't have a z-axis (it's an old laser cutter I found on the side of the road), I had to make a few workarounds. Since the pen would normally drag when moving onto a new line or when homing, I added stop points where the user must lift the pen before the machine can continue. This prevents those huge line streaks that would normally happen. Knowing this, I also updated my pen holder so that the pen could easily be removed. My first version needed the user to constantly screw and unscrew a screw, so I changed it so that the pen's weight keeps it stable.
 
 # Pen Holder
+Print them yourself here:
+| Version 1 | Version 2 |
+| --- | --- |
+| NA | NA |
+
  Unnoficial version:
    - Zip tie. My plotter has 2 holes on the head, so I wrapped a zip tie around these holes, stuck a pen inside, and tightened it as hard as I could. While it works, the pen was kind of hard to remove and would sometimes come lose.
 
-Version 1:
+[Version 1](https://github.com/Papas12213/speech-to-notes-plotter/blob/41c343448cc80b1f622575fb384ad54f3a23ca1d/orthur%20laser%20pen%20attachement%20v1.stl):
    - First actual version, designed in Fusion 360 and then 3D printed. It features 3 holes for screws and a large holding area that can fit multiple different pens. The top 2 holes are for screws and are meant to mount the holder onto my plotter. The side screw it used to tighten the holding area and prevent the pen fron moving.
-
 
 | Pros | Cons |
 | --- | --- |
-| Can hold many different pen sizes | he side screw either forces the pen to be too high or too low, making the writing barely visible or super blotchy |
+| Can hold many different pen sizes | The side screw either forces the pen to be too high or too low, making the writing barely visible or super blotchy |
 | Can easily keep pens stable and in place | When the plotter moves onto a new line, it's very impractical to untighten and tighten the side screw over and over |
 
+[Version 2](https://github.com/Papas12213/speech-to-notes-plotter/blob/41c343448cc80b1f622575fb384ad54f3a23ca1d/orthur%20laser%20pen%20attachement%20v2.stl): 
+  -  Second and current version, also designed in Fusion 360 and 3D printed. Features the same two top screws, but now has two holders to keep the pen straight. The pen is held down with its own weight, allowing it to write normally. I specifically designed this to work with thin Sharpies.
+
+| Pros | Cons |
+| --- | --- |
+| Holds thin Sharpies perfectly and allows for easy removal | Other big pens may not fit or may be too loose. |
+| The pen doesnt blotch or make thin lines when writing | Again, this only happens with the thin Sharpies |
