@@ -8,9 +8,9 @@ import HersheyFonts
 BAUD_RATE = 115200       
 FEED_RATE = 1200         
 
-FONT_SIZE = 20.0 # size of the text
+FONT_SIZE = 18.0 # size of the text
 START_X = 0.0 #Where Machine moves to when first starting
-START_Y = 120.0 #Where machine moves to (Starts at the very top)
+START_Y =120.0 #Where machine moves to (Starts at the very top)
 
 def auto_discover_grbl_port():
     print("Looking for machine...")
@@ -77,7 +77,7 @@ def speech_text_to_grbl_gcode(text):
     font.normalize_rendering(FONT_SIZE) 
     
     MAX_X = 148.0 
-    LINE_SPACING = 10.0
+    LINE_SPACING = 9.0
     
     current_x = START_X
     current_y = START_Y
@@ -117,6 +117,7 @@ def speech_text_to_grbl_gcode(text):
 
 def listen_and_write(dev):
     recognizer = sr.Recognizer()
+    recognizer.pause_threshold = 2.0
     with sr.Microphone() as source:
     
         print("\nCalibrating audio environment... (Quiet please)")
