@@ -1,5 +1,5 @@
 # VoiceScript 
- A pen plotter that physically writes down whatever you say to it. It's like speech-to-text, but now it's actually writing.
+ VoiceScript is a pen plotter that physically writes down whatever you say to it. It's like speech-to-text, but now it's actually writing.
  
  [ video ]
 
@@ -21,14 +21,14 @@
 
  -  The user can easily change the size of the font by changing the [FONT_SIZE](https://github.com/Papas12213/speech-to-notes-plotter/blob/9c4db8eda4f29700cc667a0df30038a5cd3fbb04/talk_to_plot.py#L11), allowing for more words to be written. The only limitations are the dimensions of the machine.
 
- - The user also has the ability to use whatever font they want, given that it is available in Hershey Fonts. I recommend using the cursive font as it has the least amount of lifting.
+ - The user also has the ability to use whatever font they want, given that it is available in Hershey Fonts. I recommend using the cursive font as it has the least amount of lifting. A library containing all the fonts and how they look like is linked [here](https://github.com/soft9000)
 
  - While I wrote the code based on my current plotter using only the X and Y axes, the code should work for any machine that can take G-code (CNCs, 3D printers, laser cutters, etc.)
 
 # Requirements 
 > Note: The code was written especially for my plotter. While it will still work on other machines, the code is based on my plotter's dimensions, axes, and baud rate, so certain movements may be very short or may not even happen, especially on machines with a z-axis and nozzles/lasers. These are all decided with variables that can be changed to accommodate your machine, although I do not include z-coordinates in my code.
 
-- The entire code is written in Python. I currently use Python 3.13, but any version of Python 3 will work. You will also need to install the following libraries: [Pyserial](https://pypi.org/project/pyserial/) (imported as serial), HersheyFonts, PyAudio, and SpeechRecognition.
+- The entire code is written in Python. I currently use Python 3.13, but any version of Python 3 will work. You will also need to install the following libraries: [Pyserial](https://pypi.org/project/pyserial/) (imported as serial), [HersheyFonts](https://pypi.org/project/Hershey-Fonts), [PyAudio](https://pypi.org/project/PyAudio/), and [SpeechRecognition](https://pypi.org/project/SpeechRecognition/).
 
 - An internet connection. Your words are turned into digital text by [SpeechRecognition](https://pypi.org/project/SpeechRecognition/), and there are multiple different APIs available for it. I use Google's Web Speech API because of its high accuracy, but this requires an internet connection. Alternatively, you could use PocketSphinx (CMU Sphinx), which allows you to run the code offline, but it has a lower accuracy.
 
@@ -72,4 +72,4 @@ Print them yourself here:
 | Pros | Cons |
 | --- | --- |
 | Holds thin Sharpies perfectly and allows for easy removal | Other big pens may not fit or may be too loose |
-| The pen doesnt blotch or make thin lines when writing | Again, this only happens with the thin Sharpies |
+| The pen doesnt blotch or make thin lines when writing | Again, this only happens with the thin Sharpies, limiting the pen type |
