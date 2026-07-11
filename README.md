@@ -57,7 +57,7 @@ Print them yourself here:
  Unnoficial version:
    - Zip tie. My plotter has 2 holes on the head, so I wrapped a zip tie around these holes, stuck a pen inside, and tightened it as hard as I could. While it works, the pen was kind of hard to remove and would sometimes come lose.
 
-[Version 1](https://github.com/Papas12213/speech-to-notes-plotter/blob/41c343448cc80b1f622575fb384ad54f3a23ca1d/orthur%20laser%20pen%20attachement%20v1.stl):
+[Version 1](https://github.com/Papas12213/speech-to-notes-plotter/blob/737272ae4f466bfb0897736766c5b10c5eabda79/pen%20holder%20V1.stl):
    - First actual version, designed in Fusion 360 and then 3D printed. It features 3 holes for screws and a large holding area that can fit multiple different pens. The top 2 holes are for screws and are meant to mount the holder onto my plotter. The side screw it used to tighten the holding area and prevent the pen fron moving.
 
 | Pros | Cons |
